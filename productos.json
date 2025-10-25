@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "nombre": "Labial Rouge",
+    "precio": 15.00,
+    "image": "/static/images/lipstick.jpg",
+    "descripcion": "Color intenso y acabado cremoso.",
+    "rating": 5
+  },
+  {
+    "id": 2,
+    "nombre": "Polvo Compacto",
+    "precio": 20.00,
+    "image": "/static/images/powder.jpg",
+    "descripcion": "Fijación ligera para todo el día.",
+    "rating": 4
+  },
+  {
+    "id": 3,
+    "nombre": "Paleta Sombras",
+    "precio": 25.00,
+    "image": "/static/images/eyeshadow.jpg",
+    "descripcion": "12 tonos neutros con acabado mate y satinado.",
+    "rating": 5
+  },
+  {
+    "id": 4,
+    "nombre": "Máscara Volumen",
+    "precio": 18.00,
+    "image": "/static/images/mascara.jpg",
+    "descripcion": "Pestañas más largas y con volumen.",
+    "rating": 5
+  }
+]
