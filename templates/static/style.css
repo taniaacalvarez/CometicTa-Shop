@@ -1,0 +1,71 @@
+:root {
+  --mint-1: #A8E6CE;
+  --mint-2: #DCEDC2;
+  --peach:  #FFD3B5;
+  --pink-1: #FFAAA6;
+  --pink-2: #FF8C94;
+  --text-dark: #3b1f1f;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  color: var(--text-dark);
+  background: #fff;
+}
+
+.site-header {
+  position: sticky;
+  top: 0;
+  background: linear-gradient(90deg, var(--peach), #fff);
+}
+
+.logo-placeholder {
+  width: 48px;
+  height: 48px;
+  border-radius: 10px;
+  background: linear-gradient(180deg, var(--mint-1), var(--mint-2));
+}
+
+.site-title {
+  font-weight: 700;
+  color: var(--text-dark);
+  text-decoration: none;
+  font-size: 1.25rem;
+}
+
+.nav-link {
+  color: var(--text-dark);
+  margin-left: 1rem;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.cart-badge {
+  background: var(--text-dark);
+  color: #fff;
+  border-radius: 8px;
+  padding: 4px 8px;
+  margin-left: 6px;
+}
+
+.product-card {
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid rgba(0,0,0,0.05);
+}
+
+.product-media {
+  height: 220px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.btn-add {
+  background: linear-gradient(180deg, var(--pink-1), var(--pink-2));
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  font-weight: bold;
+}

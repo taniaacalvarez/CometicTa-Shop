@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Compra realizada - Cosmitic Ta Shop</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <!-- Menú superior -->
+  <header class="site-header shadow-sm">
+    <div class="container d-flex align-items-center justify-content-between py-3">
+      <div class="brand d-flex align-items-center">
+        <div class="logo-placeholder"></div>
+        <a href="{{ url_for('index') }}" class="ms-2 site-title">Cosmitic Ta Shop</a>
+      </div>
+      <nav class="nav">
+        <a class="nav-link" href="{{ url_for('index') }}">Inicio</a>
+        <a class="nav-link" href="{{ url_for('cart') }}">Carrito</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Contenido principal -->
+  <main class="container my-5 text-center">
+    <div class="p-5 rounded-4 shadow-sm" style="background-color:#FFF7F7;">
+      <img src="https://cdn-icons-png.flaticon.com/512/2921/2921222.png" width="90" alt="Éxito" class="mb-4">
+      <h1 class="h3 mb-3 text-success">¡Gracias por tu compra!</h1>
+      <p class="lead mb-4">
+        Tu pedido ha sido registrado exitosamente.  
+        Pronto recibirás un correo con los detalles.
+      </p>
+      <a href="{{ url_for('index') }}" class="btn btn-add">Volver a la tienda</a>
+    </div>
+  </main>
+
+  <footer class="text-center py-4 small text-muted">
+    © 2025 Cosmitic Ta Shop — Confianza, lujo y estilo
+  </footer>
+</body>
+</html>
