@@ -1,0 +1,32 @@
+name: CI Pipeline
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout del código
+        uses: actions/checkout@v4
+
+      - name: Instalación de dependencias
+        run: |
+          echo "Instalando dependencias..."
+          npm install
+
+      - name: Ejecución de pruebas automatizadas
+        run: |
+          echo "Ejecutando pruebas..."
+          npm test
+
+      - name: Despliegue automático (opcional)
+        if: success()
+        run: |
+          echo "Desplegando aplicación..."
+          # Aquí podrías agregar un comando real de despliegue, por ejemplo:
+          # npm run deploy
